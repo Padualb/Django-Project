@@ -40,6 +40,7 @@
 
         body {
             font-size: 1.6rem;
+            background-color: rgb(196, 196, 196);
         }
 
         .container {
@@ -78,6 +79,44 @@
         h5,
         h6 {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .search-form {
+            border: 2px solid black;
+            max-width: 64rem;
+            margin: 0 auto;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .search-input,
+        .search-button {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 1rem;
+        }
+
+
+        .search-input {
+            width: 100%;
+            padding-right: 3rem;
+        }
+
+        .search-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+
+        .search-form:focus-within {
+            border-color: deepskyblue;
+            background: white;
+        }
+
+        .search-form:focus-within .search-button {
+            color: deepskyblue;
         }
     </style>
 
